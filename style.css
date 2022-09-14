@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+header {
+    background-color: #2C3945;
+    height: 50px;
+}
+
+.logo {
+    height: 100%;
+    padding: 10px;
+}
+
+main {
+    background-color: #1E2C3B;
+    height: 100%;
+    padding: 100px 0;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    display: block;
+    min-height: 400px;
+    width: calc(100% / 3 - 10px);
+    background-color: #2C3945;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cardImg, .title, .text {
+    margin-bottom: 10px;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.title {
+    color: #fff;
+}
+
+.text {
+    color: gray;
+}
