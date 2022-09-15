@@ -31,12 +31,14 @@ include __DIR__ . '/../database.php';
 
             <?php
                 foreach ($database as $data) {
-                    echo "<a href='#' class='card'>
-                            <img class='cardImg' src='" . $data['poster'] . "' />
-                            <h3 class='title'> $data[title] </h3>
-                            <div class='text'> $data[author] </div>
-                            <div class='text'> $data[year] </div>
-                        </a>";
+            ?>
+                <a href='#' class='card'>
+                    <img class='cardImg' src='<?php echo $data['poster']; ?>' />
+                    <h3 class='title'><?php echo $data['title']; ?></h3>
+                    <div class='text'><?php echo $data['author']; ?></div>
+                    <div class='text'><?php echo $data['year']; ?></div>
+                </a>
+            <?php            
                 }
             ?>
 
